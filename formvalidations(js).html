@@ -1,0 +1,81 @@
+<html>
+<head>
+<script type="text/javascript">
+function onlychar()
+{
+var x=document.getElementById("fname").value
+if (isNaN(x))
+{
+alert("Only character should return");
+
+return false
+}
+else
+{
+return true
+}
+}
+function onlynum()
+{
+var x=document.getElementById("mobno").value
+if (isNaN(x))
+{
+alert("Mobile number include only numbers");
+return false
+}
+else
+{
+return true
+}
+}
+function checknull()
+{
+var x=document.getElementById("fname").value
+if (x.length==0)
+{
+alert("Text should not be blank");
+return false
+}
+else
+{
+return true
+}
+}
+function check_email()
+{
+var email_add=document.getElementById("email").value
+atpos=email_add.indexOf("@")
+dotpos=email_add.lastIndexOf(".")
+if (atpos<1 || dotpos<atpos+2 )
+{
+alert("Not Valid Email, please try again.");
+return false
+}
+else
+{
+return true
+}
+}
+function checknum()
+{
+var x=document.getElementById("mobno").value
+if (x.length!=10)
+{
+alert("number at list ten digits");
+return false
+}
+else
+{
+return true
+}
+}
+
+</script>
+</head>
+<body>
+First Name-<input type="text" id="fname" onkeypress="onlychar" onblur="return checknull() "> <br>
+Enter Email-<input type="text" id="email"><br>
+Enter Mobile no-<input type="text" id="mobno"  onkeypress=" onlynum()" onblur="return checknum() "><br>
+<input type="button" Value="Check Email" onclick="return check_email()">
+</body>
+</html>
