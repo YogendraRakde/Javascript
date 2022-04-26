@@ -1,0 +1,104 @@
+<html>
+<head>
+<style>
+#h1
+{
+  color:red;
+  background:pink;
+}
+input
+{
+  color:white;
+}
+</style>
+<script>
+/*charAt:-It is used display 
+char of given number*/
+function ca(){
+str="Yogendra"
+alert(str.charAt("2"))
+}
+/*slice:- It is used to skip the
+ char of given number */
+function sl(){
+str="Yogendra"
+alert(str.slice(1,5))
+}
+/* Replace:-It is used to Replace
+ the value  */
+function rp(){
+str="Hello"
+alert(str.replace("Hello","Hii"))
+}
+/*indexOf:-Use to return the 
+first occurence of value in string*/
+function IO(){
+str="Hello"
+alert(str.indexOf("o"))
+}
+/*lastIndexOf:-Used to return 
+the last value in a string*/
+function LIO(){
+str="Hello"
+alert(str.lastIndexOf("o"))
+}
+/*concat:-It is used concatenate 
+or join two or more strings*/
+function con(){
+str="Hello!"
+alert(str.concat(" ","Yogendra"," ","Rakde"))
+}
+/*search:-It is used to return the
+ index of first matched*/
+function sr(){
+str="Hello"
+alert(str.search("Hello"))
+}
+/*Substring:-It is used to extract
+ character between rwo indices*/
+function substr(){
+str="Hello,Yogendra"
+alert(str.substring("2,7"))
+}
+/*toUpperCase:-It used to convert
+ entire string into lower case*/
+function upr(){
+str="Hello Yogendra"
+alert(str.toUpperCase())
+}
+/*toLowerCase:-It used to convert
+entire string into UPPER CASE */
+function lwr(){
+str="Hello Yogendra"
+alert(str.toLowerCase())
+}
+/*length:-length property returns 
+the length of string*/
+function lgh(){
+str="  Hello Yogendra  "
+alert(str.length)
+}
+/*trim:-It is used to remove 
+whitespaces of string*/
+function trim(){
+str=" Hello "
+ alert(str.trim())
+ }
+</script>
+<body bgcolor="goldenrod">
+<h1 id="h1"> This is String Functions in JAVASCRIPT<br>
+<input  style="background:blue;" type="button" value="charAt" onclick="ca()">
+<input style="background:cadetblue;" type="button" value="slice" onclick="sl()">
+<input style="background:orange;" type="button" value="replace" onclick="rp()">
+<input style="background:steelblue;" type="button" value="indexOf" onclick="IO()">
+<input style="background:goldenrod;" type="button" value="lastIndexOf" onclick="LIO()">
+<input style="background:darkblue;" type="button" value="concat" onclick="con()">
+<input style="background:red;" type="button" value="substring" onclick="substr()">
+<input style="background:brown;" type="button" value="search" onclick="sr()">
+<input style="background:crimson;" type="button" value="toUpperCase" onclick="upr()">
+<input style="background:darkorchid;" type="button" value="toLowerCase" onclick="lwr()">
+<input style="background:fuchsia;" type="button" value="trim" onclick="trim()">
+<input style="background:dimgray;" type="button" value="length" onclick="lgh()">
+
+</body>
+</html>
